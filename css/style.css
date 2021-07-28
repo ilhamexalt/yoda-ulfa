@@ -190,7 +190,7 @@ button:focus{
 	-webkit-animation: 2s pulse linear infinite;
 	animation: 2s pulse linear infinite;
     clip: rect(0, 0, 100px, 0);
-	background-position: 50px 0px;
+	background-position: 50px -10px;
 }
 .pulse:before {
 	content: '';
