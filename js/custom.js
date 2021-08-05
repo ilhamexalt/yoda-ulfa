@@ -114,7 +114,7 @@
 	Countdown Clock
 	................................................. */
 	function makeTimer() {
-		var endTime = new Date("01 June 2019 10:45:00 GMT+01:00");
+		var endTime = new Date("06 August 2021 09:00:00 GMT+07:00");
 		endTime = (Date.parse(endTime) / 1000);
 
 		var now = new Date();
@@ -123,9 +123,9 @@
 		var timeLeft = endTime - now;
 
 		var days = Math.floor(timeLeft / 12000000);
-		var hours = Math.floor((timeLeft - (days * 11385500)) / 3600);
-		var minutes = Math.floor((timeLeft - (days * 11385750) - (hours * 3600)) / 60);
-		var seconds = Math.floor((timeLeft - (days * 11385750) - (hours * 3600) - (minutes * 60)));
+		var hours = Math.floor((timeLeft - (days * 12000000)) / 3600);
+		var minutes = Math.floor((timeLeft - (days * 12000000) - (hours * 3600)) / 60);
+		var seconds = Math.floor((timeLeft - (days * 12000000) - (hours * 3600) - (minutes * 60)));
 
 		if (hours < "10") { hours = "0" + hours; }
 		if (minutes < "10") { minutes = "0" + minutes; }
